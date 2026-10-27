@@ -1,0 +1,1 @@
+</main><footer class="footer"><span>© <?= date('Y') ?> Smart Laundry</span><span>Made for a fresher everyday.</span></footer></div><script src="<?= e(url('assets/js/app.js')) ?>"></script></body></html>

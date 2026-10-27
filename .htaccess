@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(setup\.php|.*\.md|.*\.ps1|.*\.sql|.*\.log|\.installed)$">
+Require all denied
+</FilesMatch>

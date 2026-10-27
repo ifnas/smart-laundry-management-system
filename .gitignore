@@ -1,0 +1,70 @@
+# ==============================================================================
+# Smart Laundry Booking & Delivery Management System - Git Ignore Configuration
+# ==============================================================================
+
+# 1. Environment & Database Configuration (Contains local/production credentials)
+config/database.php
+.env
+.env.*
+*.env
+
+# 2. Database Dumps & Local Backups (Contains real customer, order, and payment data)
+backups/
+backups/*
+*.sql
+!database/schema.sql
+!database/database.sql
+!database/migrations/*.sql
+*.bak
+*.dump
+
+# 3. Local Runtime & Development Server Artifacts
+.runtime/
+.runtime/**
+database/.installed
+**/.installed
+
+# 4. Logs & Diagnostics
+*.log
+logs/
+error_log
+access.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 5. Automated Test Cookies, Sessions & Temporary Artifacts
+tests/cookies*.txt
+tests/*.cookie
+tests/*.jar
+tests/*.tmp
+*.tmp
+*.temp
+
+# 6. Operating System & IDE Cache Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# 7. IDE / Editor Workspace Files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# 8. Dependency Directories (Root-level package manager folders)
+/vendor/
+/node_modules/
+!assets/vendor/
